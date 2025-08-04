@@ -9,13 +9,12 @@ function checkAnswer() {
     }
 
     const userAnswer = selectedOption.value;
-    const correctAnswer = "4";
 
-    if (userAnswer === correctAnswer) {
+    if (userAnswer === "4") {
         feedback.textContent = "Correct!";
         feedback.style.color = "green";
     } else {
-        feedback.textContent = `Incorrect! The correct answer is ${correctAnswer}.`;
+        feedback.textContent = "Incorrect! The correct answer is 4.";
         feedback.style.color = "red";
     }
 }
